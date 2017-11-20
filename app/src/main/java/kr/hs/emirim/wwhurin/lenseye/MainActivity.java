@@ -17,9 +17,6 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.TextView;
 
-import layout.HomeFragment;
-import layout.TipFragment;
-
 public class MainActivity extends AppCompatActivity {
 
 
@@ -35,9 +32,9 @@ public class MainActivity extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         setContentView(R.layout.activity_main);
-
+        getSupportActionBar().hide();
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+//        setSupportActionBar(toolbar);
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
@@ -109,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_main, container, false);
+            View rootView = inflater.inflate(R.layout.fragment_home, container, false);
             TextView textView = (TextView) rootView.findViewById(R.id.section_label);
             //textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
             return rootView;
@@ -134,13 +131,13 @@ public class MainActivity extends AppCompatActivity {
                 case 0:
                     return new HomeFragment();
                 case 1:
-                    return new MapFragment();
+                    return new GMapFragment();
                 case 2:
                     return new TipFragment();
                 case 3:
                     return new MyPageFragment();
             }
-            return new HomeFragment();
+            return new MyPageFragment();
 
         }
 

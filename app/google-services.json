@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "29643205311",
+    "firebase_url": "https://lenseye-2ce1c.firebaseio.com",
+    "project_id": "lenseye-2ce1c",
+    "storage_bucket": "lenseye-2ce1c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:29643205311:android:abd66faa7e2dfcec",
+        "android_client_info": {
+          "package_name": "kr.hs.emirim.wwhurin.lenseye"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "29643205311-21bms9lo482mciaui9r6hv07k3jvk2j4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kr.hs.emirim.wwhurin.lenseye",
+            "certificate_hash": "fbdb6bf244cf686b70e154ebd0763f544bbd4ce9"
+          }
+        },
+        {
+          "client_id": "29643205311-mvk682i5mh6u034dm4ipd81jpfbrb5l1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhcylbTxY5qkDF9FANp0bTBLFGL7tBf10"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "29643205311-mvk682i5mh6u034dm4ipd81jpfbrb5l1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
