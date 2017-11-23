@@ -101,6 +101,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
 
                 //이동
                 Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                intent.putExtra("userId", User);
                 startActivity(intent);
                 finish();
 

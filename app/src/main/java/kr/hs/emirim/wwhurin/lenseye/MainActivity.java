@@ -1,5 +1,6 @@
 package kr.hs.emirim.wwhurin.lenseye;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -24,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
 
 
     private ViewPager mViewPager;
+
+    private static String userId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +55,9 @@ public class MainActivity extends AppCompatActivity {
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
+
+        Intent intent=getIntent();
+        userId=intent.getExtras().getString("userId");
 
 
     }
@@ -129,6 +135,10 @@ public class MainActivity extends AppCompatActivity {
 
             switch (position) {
                 case 0:
+                    Fragment fragment = new HomeFragment(); // Fragment 생성
+                    Bundle bundle = new Bundle(1); // 파라미터는 전달할 데이터 개수
+                    bundle.putString("userId", userId); // key , value
+                    fragment.setArguments(bundle);
                     return new HomeFragment();
                 case 1:
                     return new GMapFragment();
