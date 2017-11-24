@@ -48,6 +48,10 @@
         </activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".InsertActivity"></activity>
+
+        <activity android:name="addLense"
+            android:theme = "@android:style/Theme.Dialog"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

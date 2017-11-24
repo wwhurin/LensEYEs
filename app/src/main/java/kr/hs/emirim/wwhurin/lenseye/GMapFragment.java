@@ -371,7 +371,7 @@ public class GMapFragment extends Fragment
                                         .title(getHName[i]); // 타이틀.
 
                                 // 2. 마커 생성 (마커를 나타냄)
-                                gMap.addMarker(m[i]);
+                               // gMap.addMarker(m[i]);
 
 
                             }

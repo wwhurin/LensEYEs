@@ -137,6 +137,14 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
                 });
     }
 
+    @Override
+    public void onPause() {
+        super.onPause();
+        mGoogleApiClient.stopAutoManage(this);
+        mGoogleApiClient.disconnect();
+    }
+
+
 
     @Override
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
